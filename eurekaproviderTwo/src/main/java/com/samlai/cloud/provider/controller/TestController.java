@@ -17,7 +17,7 @@ public class TestController {
     @GetMapping("/test")
     public Map getOneMap() {
         Map map = new HashMap();
-        map.put("prod", "prodvider001");
+        map.put("prod", "prodvider002222");
         map.put("key", "prodvider");
         map.put("value", "oneValue");
         return map;

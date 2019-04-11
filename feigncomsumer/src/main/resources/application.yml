@@ -1,9 +1,9 @@
 server:
-  port: 7103
+  port: 7104
 spring:
   application:
     # 指定注册到eureka server上的服务名称
-    name: ribbon-comsumer
+    name: feign-comsumer
 
 eureka:
   client:
@@ -18,4 +18,22 @@ eureka:
 #设置负载均衡规则:随机访问
 provider:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+
+logging:
+  level:
+    com.samlai.cloud.feign.CFeignClient: debug
+
+feign:
+#对一些请求或响应进行压缩
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+  client:
+    config:
+      provider:
+        loggerLevel: full
+

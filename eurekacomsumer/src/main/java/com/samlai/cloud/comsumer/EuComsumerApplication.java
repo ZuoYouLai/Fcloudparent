@@ -1,24 +1,23 @@
-package com.samlai.cloud;
-
+package com.samlai.cloud.comsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * @ Author     ：SamLai
+ * @ Date       ：Created in 2019-04-04 18:11
+ * @ Description：
+ */
 @SpringBootApplication
-public class RibbonApplication {
-
-
+public class EuComsumerApplication {
     @Bean
-    @LoadBalanced
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RibbonApplication.class, args);
+        SpringApplication.run(EuComsumerApplication.class, args);
     }
-    
 }

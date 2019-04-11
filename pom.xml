@@ -12,6 +12,8 @@
         <module>eurekaprovider</module>
         <module>eurekacomsumer</module>
         <module>ribboncomsumer</module>
+        <module>eurekaproviderTwo</module>
+        <module>feigncomsumer</module>
     </modules>
 
 
