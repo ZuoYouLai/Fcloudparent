@@ -23,4 +23,19 @@ public class TestController {
         return map;
     }
 
+
+    @GetMapping("/hystrix/test")
+    public Map getHystrixMap() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Map map = new HashMap();
+        map.put("prod", "A");
+        map.put("key", "A-Key");
+        map.put("value", "A-Value");
+        return map;
+    }
+
 }

@@ -18,6 +18,9 @@ public interface CFeignClient {
     @GetMapping("/test")
     Map test();
 
+    @GetMapping("/hystrix/test")
+    Map hystrixtest();
+
 
 
     /**

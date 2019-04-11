@@ -39,9 +39,12 @@ feign:
       provider:
         loggerLevel: full
 
-#hystrix配置
+#hystrix配置【断路器】
 management:
   endpoints:
+    #查看hystrix状态
+    health:
+      show-details: always
     web:
       exposure:
         include: 'hystrix.stream'
