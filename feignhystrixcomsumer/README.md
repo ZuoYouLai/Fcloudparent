@@ -1,4 +1,4 @@
-## feign
+## 07 feign + hystrix 结合使用
 + [资料参考](http://www.itmuch.com/spring-cloud/finchley-9/)
 + 简介
   ```text

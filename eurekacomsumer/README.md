@@ -1,3 +1,2 @@
-##eurekaprovider
-+ 直接访问: localhost:7101
-+ 测试连接: localhost:7101/test
+## 02 eurekaconsumer【消费者】
++ 测试连接: localhost:7102/cus/test  消费者调用生产者的服务内容
