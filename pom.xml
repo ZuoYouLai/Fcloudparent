@@ -17,6 +17,8 @@
         <module>hystrixdashboard</module>
         <module>hystrixturbine</module>
         <module>gatewayzuul</module>
+        <module>feignhystrixcomsumer</module>
+        <module>feignhystrixcomsumerTwo</module>
     </modules>
 
 

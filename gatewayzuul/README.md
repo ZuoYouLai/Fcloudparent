@@ -39,4 +39,20 @@ Zuul是Netflix开源的微服务网关，它可以和Eureka、Ribbon、Hystrix�
         http://localhost:9001/actuator/hystrix.stream    正常返回hystrix日志内容
         说明zuul网关是集成hystrix熔断器的功能的  
    ```
-
+####自定义的微服务访问路径  [资料](http://www.itmuch.com/spring-cloud/finchley-17/)
+```
+    配置文件:
+       zuul:
+         routes:
+           #feign-comsumer微服务就会被映射到/f/**路径。
+           feign-comsumer: /f/**
+         #忽略指定微服务
+         #使用'*'可忽略所有微服务
+         #多个用逗号分隔microservice-provider-user,microservice-consumer-movie
+         #ignored-services: '*'
+    这个配置导致:
+        由原来的:
+        http://localhost:9001/feign-comsumer/feign/test
+        变成:
+        http://localhost:9001/f/feign/test  [验证成功]
+```

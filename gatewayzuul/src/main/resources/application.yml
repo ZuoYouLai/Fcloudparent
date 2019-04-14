@@ -25,4 +25,12 @@ management:
       health:
         show-details:  always
 
-
+# zuul自定义服务访问路径
+zuul:
+  routes:
+    #feign-comsumer微服务就会被映射到/f/**路径。
+    feign-comsumer: /f/**
+  #忽略指定微服务
+  #使用'*'可忽略所有微服务
+  #多个用逗号分隔microservice-provider-user,microservice-consumer-movie
+  #ignored-services: '*'
