@@ -20,6 +20,7 @@
         <module>feignhystrixcomsumer</module>
         <module>feignhystrixcomsumerTwo</module>
         <module>configserver</module>
+        <module>configclient</module>
     </modules>
 
 
