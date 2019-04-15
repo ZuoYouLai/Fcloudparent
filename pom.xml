@@ -22,6 +22,8 @@
         <module>configserver</module>
         <module>configclient</module>
         <module>sleuthcustomer</module>
+        <module>eurekaserverauthent</module>
+        <module>eurekaproviderauthent</module>
     </modules>
 
 

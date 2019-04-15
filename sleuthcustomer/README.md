@@ -12,5 +12,5 @@
     直接运行： http://localhost:9411/zipkin/
     可以查看可视化的界面内容
     
-    测试访问: localhost:9099/test   再进行查看zipkin界面的服务内容
+    测试访问: localhost:9099/test   再进行查看zipkin界面的服务内容  【发现服务并没有添加到zipkin  待完成操作】
 ```
