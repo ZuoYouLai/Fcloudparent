@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       #这里是填写config-server的地址内容
-      uri: localhost:9900
+      uri: http://localhost:9900/
       #git地址上分支
       label: master
       # profile对应config server所获取的配置文件中的{profile}

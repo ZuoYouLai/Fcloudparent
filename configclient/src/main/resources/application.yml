@@ -1,2 +1,9 @@
 server:
   port: 7991
+
+# 动态刷新spring-config内容
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh

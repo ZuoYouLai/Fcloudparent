@@ -5,4 +5,38 @@
   配置属性，以及解密外部配置文件中的属性。和主应用程序加载application.* (yml或properties)中的属性不同，引导上下文加载bootstrap.* 中的
   属性。配置在bootstrap.* 中的属性有更高的优先级，因此默认情况下它们不能被本地配置覆盖。
   ```
-+ 访问下:localhost:7991/ 直接访问controller内容测试config-server是否生效  
++ 访问下:localhost:7991/ 
+  ```text
+    直接访问controller内容测试config-server是否生效
+    访问得出结果为:
+      {
+          profile: "dev",
+          userName: "dev-Mr.SamLai"
+      }
+    是我们预想的结果内容值
+  ```  
+##### spring config的动态刷新
++ 引用：spring-boot-starter-actuator
+   ```text
+    <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+   ```
++ 配置文件:
+   ```text
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: refresh
+   ```    
++ 待刷新的配置属性所在的类上添加了@RefreshScope注解
++ 请求：localhost:7991/  
+  ```text
+    未修改前请求结果:
+      {
+      profile: "dev",
+      userName: "dev-Mr.SamLai"
+      }
+  ```
