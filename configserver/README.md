@@ -35,5 +35,5 @@
           参考 ： http://www.itmuch.com/spring-cloud/finchley-21/
           github ： https://github.com/eacdy/spring-cloud-study/tree/master/2018-Finchley/microservice-config-server-encryption-rsa
   ```
-
+#### spring config高可用 [资料](http://www.itmuch.com/spring-cloud/finchley-23/)
   

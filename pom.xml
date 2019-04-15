@@ -21,6 +21,7 @@
         <module>feignhystrixcomsumerTwo</module>
         <module>configserver</module>
         <module>configclient</module>
+        <module>sleuthcustomer</module>
     </modules>
 
 

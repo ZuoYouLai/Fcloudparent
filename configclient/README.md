@@ -39,4 +39,12 @@
       profile: "dev",
       userName: "dev-Mr.SamLai"
       }
+    
+    修改了的github的配置内容
+    然后再post请求:http://localhost:7991/actuator/refresh
+    返回正确的修改的内容:
+     {
+      profile: "dev-chance",
+      userName: "dev-Mr.SamLai-chance"
+     }
   ```
