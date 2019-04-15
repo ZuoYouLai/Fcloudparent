@@ -1,0 +1,4 @@
+server:
+  port: 9900
+username: Mr.SamLai
+project: config-server-test

@@ -19,6 +19,7 @@
         <module>gatewayzuul</module>
         <module>feignhystrixcomsumer</module>
         <module>feignhystrixcomsumerTwo</module>
+        <module>configserver</module>
     </modules>
 
 

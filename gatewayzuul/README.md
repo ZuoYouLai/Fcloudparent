@@ -56,3 +56,10 @@ Zuul是Netflix开源的微服务网关，它可以和Eureka、Ribbon、Hystrix�
         变成:
         http://localhost:9001/f/feign/test  [验证成功]
 ```
+####zuul本已集成hystrix功能,给zuul添加fall callback功能 [资料](http://www.itmuch.com/spring-cloud/finchley-18/)
+```text
+    1.添加了FallCallBack的方法
+    2.还是使用/f的例子故在feign-comsumer添加一个超时的方法进行测试: /time/test
+    3.访问url,并看下结果内容看下zuul是否有熔断fallback的内容信息:http://localhost:9001/f/feign/time/test 
+    4.测试通过:返回了【服务不可用，请稍后再试】
+```

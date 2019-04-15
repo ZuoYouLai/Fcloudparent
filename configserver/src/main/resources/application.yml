@@ -1,0 +1,22 @@
+server:
+  port: 9900
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          #这个是配置文件的git下载的文件内容
+          #git仓库地址
+          uri: https://github.com/ZuoYouLai/Fcloudparent.git
+          username:
+          password:
+          #相应配置文件在git地址根目录下进行查找
+          search-paths: gogal-config
+
+#设置这个内容主要是为了查看启动时是否会访问git地址的内容
+logging:
+  level:
+     org.springframework.cloud: DEBUG
+     org.springframework.boot: DEBUG

@@ -26,4 +26,15 @@ public class FeignController {
         Map map = this.cFeignClient.test();
         return map;
     }
+
+
+    @GetMapping("/time/test")
+    public String timeTest() throws InterruptedException {
+        int rand = Math.round(2);
+        Thread.sleep(rand * 1000);
+        return "来自feign-comsumer的测试,随机时间为:" + rand + "s";
+    }
+
+
+
 }
