@@ -24,6 +24,8 @@
         <module>sleuthcustomer</module>
         <module>eurekaserverauthent</module>
         <module>eurekaproviderauthent</module>
+        <module>alinacosdiscoveryserver</module>
+        <module>alinacosdiscoveryclient</module>
     </modules>
 
 
