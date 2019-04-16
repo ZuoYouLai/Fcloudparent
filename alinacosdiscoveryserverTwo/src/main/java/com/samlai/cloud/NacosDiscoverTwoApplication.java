@@ -11,8 +11,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  */
 @EnableDiscoveryClient
 @SpringBootApplication
-public class NacosDiscoverApplication {
+public class NacosDiscoverTwoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(NacosDiscoverApplication.class, args);
+        SpringApplication.run(NacosDiscoverTwoApplication.class, args);
     }
 }

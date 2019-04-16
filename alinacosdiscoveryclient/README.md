@@ -7,3 +7,27 @@
       Invoke : http://10.0.10.21:7701/hello?name=mr.samlaiyou , return : hello mr.samlaiyou
     正常的消费者调用服务提供者
   ```
++ 当添加多一个server调用的节点的时候,则达到负载均衡的调用  
+ ```text
+    返回的结果为:
+        
+  ```
++ [支持的几种服务消费方式（RestTemplate、WebClient、Feign)](http://blog.didispace.com/spring-cloud-alibaba-2/) 
+  ```text
+    feign方式注意点:
+    需要注意点： 这里使用FeignClient 则需要在application上添加注解 @EnableFeignClients
+  
+    rest方式注意点:
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+       return new RestTemplate();
+    }
+  
+  
+    分别访问:
+      localhost:7702/fei/test
+      localhost:7702/rest/test
+    
+    测试正确
+  ``` 
