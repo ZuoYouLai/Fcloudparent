@@ -26,6 +26,7 @@
         <module>eurekaproviderauthent</module>
         <module>alinacosdiscoveryserver</module>
         <module>alinacosdiscoveryclient</module>
+        <module>alinacosconfig</module>
     </modules>
 
 
