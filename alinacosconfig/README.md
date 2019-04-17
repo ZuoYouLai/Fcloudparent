@@ -121,4 +121,12 @@
          
           测试通过~~~
     ```  
-
+9. 多文件进行读取nacos配置 : [资料](http://blog.didispace.com/spring-cloud-alibaba-nacos-config-3/)
+    ```text
+    使用Nacos配置的时候，主要有以下三类配置：
+    A: 通过spring.cloud.nacos.config.shared-dataids定义的共享配置
+    B: 通过spring.cloud.nacos.config.ext-config[n]定义的加载配置
+    C: 通过内部规则（spring.cloud.nacos.config.prefix、spring.cloud.nacos.config.file-extension、spring.cloud.nacos.config.group这几个参数）拼接出来的配置
+    加载的配置会覆盖之前加载的配置，所以优先级关系是：A < B < C
+    ```
+10. Nacos的数据持久化 [资料](http://blog.didispace.com/spring-cloud-alibaba-4/)    
