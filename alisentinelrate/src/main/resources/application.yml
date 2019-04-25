@@ -1,0 +1,9 @@
+server:
+  port: 7705
+spring:
+  application:
+    name: ali-sentinel-rate
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8787

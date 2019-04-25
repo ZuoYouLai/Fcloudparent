@@ -27,6 +27,7 @@
         <module>alinacosdiscoveryserver</module>
         <module>alinacosdiscoveryclient</module>
         <module>alinacosconfig</module>
+        <module>alisentinelrate</module>
     </modules>
 
 
