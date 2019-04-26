@@ -1,0 +1,21 @@
+server:
+  port: 7708
+spring:
+  application:
+    name: ali-apollo-sentinel
+  cloud:
+    sentinel:
+      datasource:
+              ds:
+                appollo:
+                  namespaceName: application
+                  flowRulesKey: sentinel.flowRules
+      transport:
+        dashboard: localhost:8787
+# apollo config
+app:
+  id: ${spring.application.name}
+
+
+
+
