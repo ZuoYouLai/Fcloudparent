@@ -1,0 +1,26 @@
+server:
+  port: 7707
+spring:
+  application:
+    name: ali-sentinel-db-nacos
+  cloud:
+    sentinel:
+      datasource:
+              ds:
+                nacos:
+                  server-addr: 127.0.0.1:8848
+                  groupId: DEFAULT_GROUP
+                  dataId: ${spring.application.name}-sentinel
+      transport:
+        dashboard: localhost:8787
+      # 动态配置的内容
+#      datasource:
+#        ds:
+#          nacos:
+#            server-addr: localhost:8848
+#            dataId: ${spring.application.name}-sentinel
+#            groupId: DEFAULT_GROUP
+
+
+
+
